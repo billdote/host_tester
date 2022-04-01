@@ -1,0 +1,4 @@
+https://example.com
+http://sample.com/
+https://test.com
+http://www.ruby-lang.org
