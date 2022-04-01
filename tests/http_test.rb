@@ -37,7 +37,7 @@ module HTTPTest
 
       if response == 'REQUEST TIMED OUT'
         puts "response from #{host}: " + response.red
-      elsif response.code == 200.to_s
+      elsif response.code =~ /^2.*/
         puts "response from #{host}: " + "#{response.code} OK".green
       else
         puts "response from #{host}: " + "#{response.code} NOT OK".red
