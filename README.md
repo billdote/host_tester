@@ -1,4 +1,4 @@
-# WEB HOST HEALTH TESTER
+# WEB HOST TESTER
 Testing tool written in Ruby to determine if a host is pingable and responding to HTTP requests.
 
 ### Gems Required
