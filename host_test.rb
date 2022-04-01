@@ -22,7 +22,7 @@ class HostTest
 
   def run
     File.open('hosts.txt').each do |line|
-      next if line.chomp.empty?
+      next if line.chomp.empty? || line.chomp =~ /:\d+/
       # format the line to only use the domain
       format_line = line.chomp.match(%r{(?<=//).*?(?=/|$)}).to_s
       ping_host[line.chomp] = IPSocket.getaddress(format_line)
