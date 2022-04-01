@@ -16,7 +16,7 @@ module HTTPTest
           location = response['Location']
           new_uri = URI.parse(location)
           host = if new_uri.relative?
-                   uri + location
+                   (uri + location).to_s
                  else
                    new_uri.to_s
                  end
